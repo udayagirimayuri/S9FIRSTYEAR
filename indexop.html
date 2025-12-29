@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background-color:black;
+            background-image:url(htmlpimage.jpg);
+            color:white;
+        }
+        header{
+            background-color:black;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            padding:15px;
+            text-align: center;
+            color:white;
+        }
+            nav {
+            background-color:black;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+            color: white;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color:white;
+            font-weight: bold;
+            padding: 8px 16px;
+        }
+
+        nav a:hover {
+            background-color:black;
+            border-radius: 4px;
+        }
+
+        .dashboard {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color:black;
+        }
+
+        .card:hover{
+            background-color:black;
+            border: 1px solid plum;
+            padding: 20px;
+            width: 150px;
+            text-align: center;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            font-size: 18px;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+
+    <header>Edumanager</header>
+    <nav>
+        <a href="dashboardop.html">Dashboard</a>
+        <a href="courseop.html">Courses</a>
+        <a href="studentop.html">Students</a>
+        <a href="profileop.html">Profile</a>
+        <a href="loginop.html">LOGIN</a>
+        <a href="quizop.html">QUIZ</a>
+    </nav>
+    <div class="dashboard">
+        <div class="card">Courses: 3</div>
+        <div class="card">Students: 45</div>
+        <div class="card">Pending works: 2</div>
+    </div>
+
+    
+</body>
+</html>

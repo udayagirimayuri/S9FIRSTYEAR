@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <script>
+    function validateForm() {
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("password").value;
+
+      // Check if name is empty
+      if (name === "") {
+        alert("Please enter your name");
+        return false;
+      }
+      // Check if email is empty
+      if (email === "") {
+        alert("Please enter your email");
+        return false;
+      // Check if password is at least 6 characters
+      if (password.length < 8) {
+        alert("Your password contains atleast 8 characters");
+        return false;
+      }
+
+      // If all validations pass
+      alert("Login successfully");
+      return true;
+    }
+}
+  </script>
+    <style>
+        body{
+            background-image: url(htmlimage.jpg);
+            text-align: center;
+            color: white;
+        }
+        .name{
+            font-family: cursive;
+            font-size: 25px;
+        }
+        .password{
+            font-family: cursive;
+            font-size: 25px;
+        }
+        .herf{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<form onsubmit="return validateForm()">
+    <label>Name:</label><br>
+    <input type="text" id="name" placeholder="enter your name"><br><br>
+
+    <label>Email:</label><br>
+    <input type="text" id="email" placeholder="enter your email"><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" id="password" placeholder="enter password"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
